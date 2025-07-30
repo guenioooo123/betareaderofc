@@ -909,7 +909,7 @@ export default function BetaReaderLanding() {
                     }}
                     disabled={dashboardBalance === 0}
                   >
-                    {dashboardBalance > 0 ? "Toque para sacar" : "Sem saldo para saque"}
+                    {dashboardBalance > 0 ? "Toque para sacar" : "Sem saldo"}
                   </Button>
                 </CardContent>
               </Card>
@@ -1488,7 +1488,7 @@ export default function BetaReaderLanding() {
               </>
             ) : (
               <Card className="bg-white border-0 shadow-sm mb-6 rounded-2xl">
-                <CardContent className="p-6 text-center">
+                <CardContent className="p-4 flex flex-col items-center justify-center text-center min-h-[200px]">
                   <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-4xl text-gray-400 font-bold">$</span>
                   </div>
